@@ -6,7 +6,7 @@ import (
 )
 
 func indexHandler(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprintf(w, "URL.Path = %q\n", req.URL.Path)
+	fmt.Fprintf(w, "URL.Path = %s\n", req.URL.Path)
 }
 
 func helloHandler(w http.ResponseWriter, req *http.Request) {
